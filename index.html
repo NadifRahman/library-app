@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id = "library-container">
+        
+        <div class = "bookcard" data-index="0">
+            <div class ="book-title">The three little pegs </div>
+            <div class ="book-author">James Halliwell-Phillipps</div>
+            <div class="number-of-pages">10</div>
+            <div class="has-read">true</div>
+            <button class = "delete-book">Delete book</button>
+            <button class = "read-status">Change Read Status<button>
+        </div>
+        
+    </div>
+    <button class = "add-new-book">Add new book</button>
+
+    <div class = "new-book-container">
+        <form>
+            <div class="input-field">
+                <label for="book-title">Name of book:</label>
+                <input type="text" id="book-title">
+            </div>
+            <div class="input-field">
+                <label for="book-author">Name of author: </label>
+                <input type="text" id="book-author">
+            </div>
+            <div class="input-field">
+                <label for="number-of-pages">Number of pages: </label>
+                <input type="text" id="number-of-pages">
+            </div>
+            <div class="input-field radio">
+                <input type="radio" id="true" name = "read" value = "true">
+                <label for="true">I have read this book</label>
+                <input type="radio" id="false" name = "read" value = "false" checked>
+                <label for="false">I have not read this book</label>
+            </div>
+            <button type="submit" id="submit-book-btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
