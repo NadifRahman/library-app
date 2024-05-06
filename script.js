@@ -35,6 +35,10 @@ function addBookToLibrary(name, author, numberOfPages, hasRead) {
     readStatus.classList.add("has-read");
     readStatus.textContent = hasRead ? "Read" : "Not Read";
 
+    let pages =  document.createElement("div");
+    pages.classList.add("number-of-pages");
+    pages.textContent = numberOfPages;
+
     let deleteBookBtn = document.createElement("button")
     deleteBookBtn.classList.add("delete-book");
     deleteBookBtn.textContent = "Delete book"
@@ -62,6 +66,7 @@ function addBookToLibrary(name, author, numberOfPages, hasRead) {
     bookcard.appendChild(booktitle);
     bookcard.appendChild(bookauthor);
     bookcard.appendChild(readStatus);
+    bookcard.appendChild(pages);
     bookcard.appendChild(deleteBookBtn);
     bookcard.appendChild(readToggleBtn);
     console.log(libraryContainer);
